@@ -22,7 +22,7 @@ const Home: NextPage = () => {
               textTransform='uppercase'
               fontSize='sm'
               letterSpacing='wide'
-              color='teal.600'
+              color='teal.600' 
             >
               Marketing
             </Text>
