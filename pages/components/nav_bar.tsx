@@ -25,7 +25,7 @@ import { MotionBox } from './animations/motion';
 import NextLink from 'next/link';
 import { BiChevronDown } from 'react-icons/bi';
 import { AiTwotoneThunderbolt } from 'react-icons/ai';
-import { BsBook , BsCheckCircle} from 'react-icons/bs';
+import { BsBook , BsCheckCircle, BsGithub} from 'react-icons/bs';
 import { MdTimeline } from 'react-icons/md';
 import { CgArrowsExchange } from 'react-icons/cg';
 import { useRouter } from 'next/router';
@@ -207,12 +207,15 @@ export default function NavBar() {
               </HStack>
             </HStack>
             <Flex alignItems={'center'}>
-              <Button
-                rounded='xl' 
-                size={'sm'}
-                mr={4}
-              >
-              </Button>
+              <Link href={'https://github.com/cr0w1'} target="_blank">
+                <Button
+                  rounded='xl' 
+                  size={'sm'}
+                  mr={4}
+                >
+                  <BsGithub/>
+                </Button>
+              </Link>
               <Button
                 rounded='xl'
                 onClick={toggleColorMode}
@@ -220,7 +223,6 @@ export default function NavBar() {
               >
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
-
             </Flex>
           </Flex>
 
